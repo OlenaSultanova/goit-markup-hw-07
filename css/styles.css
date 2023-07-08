@@ -239,19 +239,31 @@ ul {
 /* 1st section */
 
 .hero-section {
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/people-office.jpg);
   background-color: var(--dark);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 428px;
+  width: 100%;
   margin-right: 0 auto;
   text-align: center;
   padding: 112px 0;
+
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(..//images/hero/hero-img@1x-mob.jpg);
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(..//images/hero/hero-img@2x-mob.webp);
+  }
 }
 
 .hero-title {
@@ -456,7 +468,6 @@ ul {
   text-align: center;
   text-transform: capitalize;
   color: var(--dark);
-  margin-left: 0 auto;
   margin-bottom: 72px;
 }
 
@@ -518,6 +529,10 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.footer-container .logo {
+  margin: auto;
 }
 .footer-container .logo {
   display: inline-block;
@@ -1035,7 +1050,24 @@ ul {
 
   /* Hero */
   .hero-section {
-    max-width: 768px;
+    max-width: 100%;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(..//images/hero/hero-img@1x-tabl.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(..//images/hero/hero-img@2x-tabl.webp);
+    }
   }
 
   .hero-title {
@@ -1086,13 +1118,12 @@ ul {
     row-gap: 64px;
   }
 
-  .team-card {
+  /* .team-card {
     width: calc((100% - 24px) / 2);
-  }
+  } */
 
   /* Customers */
   .customers-list {
-    justify-content: center;
     column-gap: 24px;
   }
 
@@ -1164,8 +1195,23 @@ ul {
   /* HERO */
 
   .hero-section {
-    max-width: 1440px;
+    max-width: 100%;
     padding: 188px 0;
+
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7)),
+      url(..//images/hero/hero-img.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(..//images/hero/hero-img@2x-desk.webp);
+    }
   }
 
   /* advantages-section */
@@ -1266,6 +1312,9 @@ ul {
     display: flex;
   }
 
+  .footer-container .logo {
+    margin-right: auto;
+  }
   .footer-text {
     margin-bottom: 0;
   }
