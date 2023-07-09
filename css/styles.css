@@ -35,6 +35,9 @@ p {
 
 img {
   display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 ul {
@@ -105,8 +108,8 @@ ul {
 .mobile-menu-container {
   display: flex;
   flex-direction: column;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 }
 .mobile-menu-modal {
   position: absolute;
@@ -204,9 +207,9 @@ ul {
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
-  line-height: 1, 11;
   text-transform: capitalize;
   color: var(--primary-brand);
+  width: 90%;
 }
 
 .address-link-email {
@@ -362,12 +365,10 @@ ul {
 /* Our Team */
 .team {
   background-color: var(--light);
-  padding: 96px 82px;
+  padding: 96px 0;
 }
 
 .team-title {
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 72px;
   text-align: center;
   font-size: 36px;
@@ -948,6 +949,14 @@ ul {
     display: none;
   }
 
+  .is-open {
+    display: none;
+  }
+
+  .mobile-menu-container {
+    display: none;
+  }
+
   .nav-menu {
     display: flex;
     align-items: center;
@@ -1028,6 +1037,7 @@ ul {
   }
 
   .address-link {
+    font-size: 12px;
     text-decoration: none;
     color: var(--subtle-text);
     line-height: 1.5;
@@ -1106,7 +1116,7 @@ ul {
   /* Our Team */
 
   .team {
-    padding: 96px 108px;
+    padding: 96px 0;
   }
 
   .teamlist {
@@ -1127,9 +1137,9 @@ ul {
     column-gap: 24px;
   }
 
-  .customers-list .item {
+  /* .customers-list .item {
     width: calc((100% - 48px) / 3);
-  }
+  } */
 
   .customers-link {
     max-width: 168px;
@@ -1146,6 +1156,10 @@ ul {
 
   .footer-container {
     align-items: center;
+  }
+
+  .footer-container .logo {
+    margin-left: 0;
   }
 
   .socialmedia-container {
@@ -1168,9 +1182,9 @@ ul {
 
   /* Hero modal */
   .modal {
-    transform: translate(-50%, -45%);
+    transform: translate(-50%, -50%);
     width: 408px;
-    height: 584px;
+    min-height: 584px;
   }
 }
 
@@ -1190,6 +1204,10 @@ ul {
 
   .address-nav {
     flex-direction: row;
+  }
+
+  .address-link {
+    font-size: 16px;
   }
 
   /* HERO */
@@ -1347,7 +1365,7 @@ ul {
   /* Hero modal */
 
   .modal {
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -115%);
   }
 }
 
