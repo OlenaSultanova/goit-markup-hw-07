@@ -980,7 +980,7 @@ ul {
 
 .portfolio .link {
   display: block;
-
+  text-decoration: none;
   transition: box-shadow 250ms var(--timing-function);
 }
 
@@ -1051,7 +1051,7 @@ ul {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 427px) {
+@media screen and (max-width: 427px) {
   .address-link-tel {
     font-size: 20px;
   }
