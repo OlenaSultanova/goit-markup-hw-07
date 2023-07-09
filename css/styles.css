@@ -1517,104 +1517,10 @@ ul {
 
   .portfolio {
     justify-content: center;
+    gap: 24px;
+  }
+
+  .portfolio .item {
+    width: calc((100% - 48px) / 3);
   }
 }
-
-/* Styles for portfolio.html */
-
-/* .nav-button:hover,
-.nav-button:focus {
-  color: var(--white-background);
-  border: 1px solid transparent;
-  background: var(--pressed-state);
-  border: 1px solid transparent;
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
-    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
-} */
-
-/* .portfolio {
-  flex-wrap: wrap;
-  margin-top: 72px;
-} */
-
-/* .portfolio .item {
-  display: block;
-  width: calc((100% - 48px) / 3);
-  margin-right: 24px;
-  margin-bottom: 48px;
-  border: 1px solid var(--accent);
-}
-
-.portfolio .item:nth-last-child(-n + 3) {
-  margin-bottom: 0;
-}
-
-.portfolio .item:nth-child(3n) {
-  margin-right: 0;
-} */
-
-/* .portfolio-text-container {
-  padding: 32px 16px;
-  border: 1px solid var(--accent);
-  border-top: none;
-} */
-
-/* .portfolio .link {
-  display: block;
-
-  transition: box-shadow 250ms var(--timing-function);
-}
-
-.portfolio .link:hover,
-.portfolio .link:focus {
-  transform: translateY(0%);
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-}
-
-.portfolio .link:hover .overlaytext,
-.portfolio .link:focus .overlaytext {
-  transform: translateX(0);
-} */
-
-/* .portfoliocard-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--dark);
-  margin-bottom: 8px;
-}
-
-.portfoliocard-text {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--subtle-text);
-  padding: 0;
-} */
-
-/* blueoverlay */
-/* .thumb {
-  position: relative;
-  width: 360px;
-  overflow: hidden;
-} */
-
-/* .overlaytext {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-
-  padding: 40px 32px;
-  background-color: var(--primary-brand);
-  color: var(--light);
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-
-  transform: translateY(100%);
-  transition: transform 250ms var(--timing-function);
-} */
