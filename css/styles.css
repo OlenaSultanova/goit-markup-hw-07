@@ -1057,7 +1057,7 @@ ul {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 427px) {
   .portfolio .item {
     width: auto;
   }
