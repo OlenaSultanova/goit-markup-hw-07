@@ -1323,10 +1323,11 @@ ul {
   .portfolio {
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 24px;
   }
 
   .portfolio .item {
-    width: calc((100% - 48px) / 2);
+    width: calc((100% - 24px) / 2);
   }
 }
 
@@ -1518,7 +1519,6 @@ ul {
 
   .portfolio {
     justify-content: center;
-    gap: 24px;
   }
 
   .portfolio .item {
