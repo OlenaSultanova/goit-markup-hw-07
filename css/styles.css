@@ -1057,6 +1057,12 @@ ul {
   }
 }
 
+@media screen and (max-width: 320px) {
+  .portfolio .item {
+    width: auto;
+  }
+}
+
 /* TABLET STYLES */
 
 @media screen and (min-width: 768px) {
